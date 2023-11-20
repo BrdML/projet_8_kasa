@@ -1,0 +1,36 @@
+// Mixins FLEXBOX
+@mixin flexbox($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flexAlign($align) {
+  display: flex;
+  align-items: $align;
+}
+
+@mixin flexContent($justify) {
+  display: flex;
+  justify-content: $justify;
+}
+
+@mixin flexColumn($direction, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+}
+
+// Mixins Animations
+@mixin slideDownAnimation {
+  animation: slideDown 0.5s ease-in-out;
+  z-index: -1;
+  position: relative;
+}
+
+@mixin slideUpAnimation {
+  animation: slideUp 0.5s ease-in-out;
+}
+
+// Mixins Mediaqueries

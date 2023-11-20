@@ -1,0 +1,9 @@
+@import '../../utils/sass/main.scss';
+.host__stars {
+    @include flexbox(unset, end, center);
+    margin-top: 10px;
+    img {
+        height: 36px;
+        width: 36px;
+    }
+}

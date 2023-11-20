@@ -1,0 +1,31 @@
+@import '../../utils/sass/main.scss';
+.collapse {
+    button{
+        width: 582px;
+        height: 52px;
+        border-radius: 10px;
+        border: none;
+        background-color: $primary-color;
+        color: $secondary-color;
+        @include flexbox(row, space-between, center);
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+    &__title {
+        margin: 0;
+    }
+    &__text {
+        color: $primary-color;
+        background-color: $background-color-lightgrey;
+        padding: 10px;
+        border-radius: 0 0 10px 10px;
+        overflow: hidden;
+    }
+}
+.open {
+    @include slideDownAnimation;
+}
+  
+.closed {
+    @include slideUpAnimation;
+}

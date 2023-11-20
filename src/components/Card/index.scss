@@ -1,0 +1,25 @@
+@import '../../utils/sass/main.scss';
+.card{
+    position: relative;
+    width: 315px;
+    &__picture{
+    width: 328px;
+    height: 328px;
+    border-radius: 10px;
+    object-fit: cover;
+    filter: brightness(0.8);
+    }
+}
+.title {
+    position: absolute;
+    bottom: 0px;
+    z-index: 1; 
+    width: 320px;
+    h3 {
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        color: $secondary-color;
+        margin: 0px 20px 20px 20px;
+    }
+}

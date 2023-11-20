@@ -1,0 +1,15 @@
+@import '../../utils/sass/main.scss';
+.home {
+    padding: 0px 65px 0px 65px;
+    &__gallery {
+        width: 1214px;
+        border-radius: 25px;
+        background-color: $background-color-lightgrey;
+        margin-top: 35px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 60px;
+        row-gap: 50px;
+        padding: 50px;
+    }
+}

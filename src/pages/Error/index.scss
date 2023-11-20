@@ -1,0 +1,23 @@
+@import '../../utils/sass/main.scss';
+.error{
+    @include flexContent(center);
+    color: $primary-color;
+    &__container {
+        @include flexbox(column, center, center);
+        gap: 139px;
+        padding: 139px 0px 139px 0px;
+        &__title {
+            width: 597px;
+            height: 263px;
+        }
+        h1 {
+            font-size: 270px;
+            font-style: normal;
+            font-weight: 700;
+            margin: 0;
+        }
+        a {
+            color: $primary-color;  
+        }
+    }
+}

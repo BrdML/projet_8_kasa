@@ -1,0 +1,32 @@
+@import '../../utils/sass/main.scss';
+.carousel {
+    width: 1240px;
+    height: 415px;
+    &__container {
+        position: relative;
+        span {
+            position: absolute;
+            bottom: 35px;
+            left: 602px;
+            color: $secondary-color;    
+        }
+    }
+    &__img {
+        width: 1240px;
+        height: 415px;    
+        border-radius: 25px;
+        object-fit: cover;
+    }
+    &__arrow {
+        position: absolute;
+        top: 150px;
+        width: 1240px;
+        @include flexContent(space-between,);
+        padding: 8px;
+        .img-arrow {
+            width: 46px;
+            height: 79px;
+            cursor: pointer;
+        }
+    }
+}

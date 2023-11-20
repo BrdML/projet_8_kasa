@@ -1,0 +1,16 @@
+@import '../../utils/sass/main.scss';
+.footer {
+    background-color: $tertiary-color;
+    color: $secondary-color;
+    height: 209px;
+    width: 100%;
+    display: flex;
+    padding: 66px 464px 29px 463px;
+    @include flexbox(column, flex-end, center);
+    gap: 28.556px;
+    margin-top: 50px;
+    &__img {
+        width: 122px;
+        height: 40px;
+    }
+}    

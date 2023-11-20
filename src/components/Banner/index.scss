@@ -1,0 +1,23 @@
+@import '../../utils/sass/main.scss';
+.banner {
+    width: 100%;
+    &__img{
+        width: 1214px;
+        height: 210px;  
+        border-radius: 25px;
+        object-fit: cover;
+        filter: brightness(0.7);
+        position: relative;
+    }
+    &__title{
+        position: absolute;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 142.6%;
+        text-align: center;
+        color: $secondary-color;
+        top: 29%;
+        left: 24%;
+    }
+}
