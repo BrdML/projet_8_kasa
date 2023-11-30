@@ -2,7 +2,7 @@
 .home {
     padding: 0px 65px 0px 65px;
     &__gallery {
-        width: 1214px;
+        width: 100%;
         border-radius: 25px;
         background-color: $background-color-lightgrey;
         margin-top: 35px;
@@ -11,5 +11,15 @@
         column-gap: 60px;
         row-gap: 50px;
         padding: 50px;
+    }
+    @include respond-to(mobiles) {
+        padding: 0px 20px 0px 20px;
+        &__gallery {
+            display: grid;
+            row-gap: 27px;
+            grid-template-columns: 1fr;
+            padding: 0;
+            background-color: $secondary-color;
+        }
     }
 }

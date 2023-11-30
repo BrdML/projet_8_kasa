@@ -10,7 +10,7 @@ function Navbar() {
     <header className='header'>
       <nav className='navbar'>
         <ul className='navbar__nav'>
-          <li className='navbar__nav-item'>
+          <li className='navbar__nav-item logo'>
           <NavLink to="/">
             <img src={KasaLogo} alt='Kasa logo'/>
           </NavLink>

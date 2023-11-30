@@ -20,4 +20,18 @@
             color: $primary-color;  
         }
     }
+    @include respond-to(mobiles) {
+        &__container {
+            gap: 113px;
+            h1 {
+                font-size: 96px;
+            }
+            p {
+                width: 260px;
+                text-align: center;
+                font-size: 18px;
+                font-weight: 500;
+            };
+        } 
+    }
 }

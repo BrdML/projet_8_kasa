@@ -6,13 +6,28 @@
         @include flexbox(column, center, center);
         gap: 30px;
         margin-top: 30px;
+        padding: 0px 50px;
         .collapse {
             button {
-                width: 1023px;
+                width: 100%;
                 height: 54px;
             }
             &__text {
-                width: 1023px;
+                width: 100%;
+            }
+        }
+    }
+    @include respond-to(mobiles) {
+        padding: 0px 20px 0px 20px;
+        &__container {
+            gap: 20px;
+            margin-top: 20px;
+            padding: 0px;
+            .collapse {
+                button {
+                    width: 100%;
+                    height: 30px;
+                }
             }
         }
     }

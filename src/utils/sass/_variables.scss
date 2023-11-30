@@ -5,3 +5,9 @@ $tertiary-color: #000000;
 
 // Utilitaires Couleurs fond
 $background-color-lightgrey: #F6F6F6;
+
+// Utilitaires Responsive
+$breakpoints: (
+  mobiles: 768px,
+  tablettes: 768px,
+);
